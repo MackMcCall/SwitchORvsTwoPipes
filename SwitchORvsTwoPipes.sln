@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwitchORvsTwoPipes", "SwitchORvsTwoPipes\SwitchORvsTwoPipes.csproj", "{63DC0DA9-7027-40B1-B2C4-0D363EF78C6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63DC0DA9-7027-40B1-B2C4-0D363EF78C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63DC0DA9-7027-40B1-B2C4-0D363EF78C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63DC0DA9-7027-40B1-B2C4-0D363EF78C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63DC0DA9-7027-40B1-B2C4-0D363EF78C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F43B66E3-03CB-48A1-BA7B-40203A29808A}
+	EndGlobalSection
+EndGlobal
