@@ -31,22 +31,6 @@ namespace SwitchORvsTwoPipes
                  * case "south" || "west":
                  *    Console.WriteLine("SOUTH, WEST");
                  *    break;
-                 * 
-                 * There are two reasons why the || operator cannot be used.
-                 * They both find their roots in the fact that the logical OR operator ("||") returns a boolean value. 
-                 * 
-                 * First, since a boolean value is returned, the case above would simplify to either "case: true" or "case: false".
-                 * When we pass in the "direction" variable it is compared to the value of the case. 
-                 * We know that if the switch value is equal to ("==") the case value, then the statements in that case run.
-                 * Given that neither "true" nor "false" == "south" or "west", the switch vs case comparison can never evaluate to true, and the case can never run.
-                 * 
-                 * This is furthered by the fact that the value of a case must be the same value type as the switch value. (bool is not string)
-                 * 
-                 * Secondly, the case value must be a constant. 
-                 * Given that the || operator takes two operands and outputs either true or false, by nature the expression is not a constant.
-                 * There is some amount of ambiguity that cannot be resolved within the case statement. 
-                 * 
-                 * Thanks to Erik for asking why "or" works and "||" doesn't. Always ponder the whys.
                  */
                 default:
                     Console.WriteLine("invalid input");
@@ -72,6 +56,25 @@ namespace SwitchORvsTwoPipes
                     Console.WriteLine("invalid input");
                     break;
             }
+
+            /*  Now, why does "or" work and "||" does not?
+             *  
+             *  There are two reasons why the || operator cannot be used.
+             *  
+             *  They both find their roots in the fact that the logical OR operator ("||") returns a boolean value. 
+             *  First, since a boolean value is returned, the case above would simplify to either "case: true" or "case: false".
+             *  When we pass in the "direction" variable it is compared to the value of the case. 
+             *  We know that if the switch value is equal to ("==") the case value, then the statements in that case run.
+             *  Given that neither "true" nor "false" == "south" or "west", the switch vs case comparison can never evaluate to true, and the case can never run.
+             * 
+             * This is furthered by the fact that the value of a case must be the same value type as the switch value. (bool is not string)
+             * 
+             * Secondly, the case value must be a constant. 
+             * Given that the || operator takes two operands and outputs either true or false, by nature the expression is not a constant.
+             * There is some amount of ambiguity that cannot be resolved within the case statement. 
+             * 
+             * Thanks to Erik for asking why "or" works and "||" doesn't. Always ponder the whys.
+             */
         }
     }
 }
