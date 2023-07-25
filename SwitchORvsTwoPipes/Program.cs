@@ -57,11 +57,12 @@ namespace SwitchORvsTwoPipes
                     break;
             }
 
-            /*  Now, why does "or" work and "||" does not?
+            /*  Now, why does "or" work and "||" not?
+             *  
+             *  The "or" can be used since it does pattern matching. 
              *  
              *  There are two reasons why the || operator cannot be used.
              *  
-             *  They both find their roots in the fact that the logical OR operator ("||") returns a boolean value. 
              *  First, since a boolean value is returned, the case above would simplify to either "case: true" or "case: false".
              *  When we pass in the "direction" variable it is compared to the value of the case. 
              *  We know that if the switch value is equal to ("==") the case value, then the statements in that case run.
